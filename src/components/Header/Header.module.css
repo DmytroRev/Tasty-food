@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    padding: 15px 115px;
+    gap: 654px;
+    border-bottom: 1px solid silver;
+}
+
+.containerHeaderInfo {
+    display: flex;
+    gap: 24px;
+}
+
+.locationAndMail {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mail{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+.locationAndMailIcon {
+    fill: #76A713;
+    height: 16px;
+    width: 16px;
+}
+
+
+.containerLangAndMedia {
+display: flex;
+gap: 31px;
+}
+
+.containerSelect {
+    cursor: pointer;
+border: none;
+
+}
+
+.containerSelect:focus {
+    outline: none;
+}
+
+.containerList {
+    display: flex;
+    gap: 20px;
+}
+
+.iconMedia {
+    cursor: pointer;
+        fill: silver;
+        transition: fill 0.3s ease;
+    }
+
+.iconMedia:hover {
+    fill: #76A713;
+}
