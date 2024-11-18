@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    align-items: center;
+    padding: 30px 113px;
+justify-content: space-between;}
+
+.img {
+    width: 217px;
+    height: 50px;
+}
+
+.ContainerForListAndBtns{ 
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+.containerList {
+    display: flex;
+    gap: 25px;
+}
+
+.list {
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.list:hover{
+    color: #76A713;
+}
+
+.containerForBtns {
+    display: flex;
+    gap: 10px;
+}
+
+.btnLogin {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: #76A713;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnLogin:hover {
+    background-color: #94C531;
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
