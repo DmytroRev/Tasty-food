@@ -1,6 +1,7 @@
 .container {
     display: flex;
     padding: 15px 115px;
+    justify-content: space-between;
     gap: 654px;
     border-bottom: 1px solid silver;
 }
