@@ -1,0 +1,76 @@
+[
+    {
+    "id": 1,
+    "name": "Red Pepper",
+    "category": "Fruits",
+    "price": 3.00,
+    "fullPrice": 5.00,
+    "rating": 4.5,
+    "image": "https://res.cloudinary.com/drg797a6g/image/upload/v1732048564/hxnv2o7ujhbtye97fuom.png"
+},{
+    "id": 2,
+    "name": "Cabbage",
+    "category": "Fruits",
+    "price": 5.00,
+    "discountPrice": 2.25,
+    "rating": 4.0,
+    "image": "https://res.cloudinary.com/drg797a6g/image/upload/v1732048564/xypimdayrfhzhknpjrqn.png",
+    "isDiscounted": true,
+    "discountPercent": 50
+},{
+    "id": 3,
+    "name": "Tomato",
+    "category": "Fruits",
+    "price": 5.00,
+    "rating": 4.7,
+    "image": "https://res.cloudinary.com/drg797a6g/image/upload/v1732048564/hduorubklguhpiplbblx.png" 
+},{
+    "id": 4,
+    "name": "Garlic",
+    "category": "Fruits",
+    "price": 1.00,
+    "rating": 4.8,
+    "image": "https://res.cloudinary.com/drg797a6g/image/upload/v1732049667/vbn2kdjmh0spvumyakxz.png" 
+},{
+    "id": 5,
+    "name": "Meat Beef",
+    "category": "Food",
+    "price": 45.00,
+    "discountPrice": 38.25,
+    "rating": 4.6,
+    "image": "https://res.cloudinary.com/drg797a6g/image/upload/v1732048564/l7uln2ybik1lvf2vd8ej.png",
+    "isDiscounted": true,
+    "discountPercent": 15
+},{
+    "id": 6,
+    "name": "Watermelon",
+    "category": "Fruits",
+    "price": 11.00,
+    "rating": 4.2,
+    "image": "https://res.cloudinary.com/drg797a6g/image/upload/v1732048564/qi2x6hk3ujwiumabmbcl.png"
+}, {
+    "id": 7,
+    "name": "Seafood Mix",
+    "category": "Seafood",
+    "price": 33.00,
+    "rating": 4.8,
+    "image": "https://res.cloudinary.com/drg797a6g/image/upload/v1732050204/kkfidojz3ey6lbgubpbo.png"
+}, {
+    "id": 8,
+    "name": "Avocado",
+    "category": "Organic",
+    "price": 8.00,
+    "discountPrice": 6.40,
+    "rating": 4.6,
+    "image": "https://res.cloudinary.com/drg797a6g/image/upload/v1732050790/nvfag7ipuwxjhocpuzq0.png",
+    "isDiscounted": true,
+    "discountPercent": 33
+}, {
+    "id": 9,
+    "name": "Health Drink",
+    "category": "Health",
+    "price": 1.99,
+    "rating": 4.0,
+    "image": "https://res.cloudinary.com/drg797a6g/image/upload/v1732051141/fumbdqmmzdhd2dmg0afe.png"
+}
+]
