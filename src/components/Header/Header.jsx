@@ -11,7 +11,7 @@ const Header = () => {
         <FaLocationDot className={css.locationAndMailIcon} style={{width: 16}}/> <p className={css.location}>15/A, Nest Tower, NYC</p>
       </div>
       <div className={css.locationAndMail}>
-        <BiSolidEnvelope  className={css.locationAndMailIcon} style={{width: 20, height:20}}/><a href="info@webmail.com" className={css.mail}>info@webmail.com</a>
+        <BiSolidEnvelope  className={css.locationAndMailIcon} style={{width: 20, height:20}}/><a href="info@webmail.com" className={css.mail} target="_blank">info@webmail.com</a>
       </div>
       </div>
       <div className={css.containerLangAndMedia}>

@@ -5,7 +5,7 @@ import { CiShoppingCart } from "react-icons/ci";
 const Navigate = () => {
   return (
     <div className={css.container}>
-      <img src="../../../public/logo.png" alt="logo" className={css.img} />
+      <img src="/logo.png" alt="logo" className={css.img} />
       <div className={css.ContainerForListAndBtns}>
       <ul className={css.containerList}>
         <li className={css.list}>Home +</li>
