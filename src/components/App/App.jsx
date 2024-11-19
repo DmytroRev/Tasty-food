@@ -1,4 +1,5 @@
 import AboutUs from "../AboutUs/AboutUs";
+import CountTotal from "../CountTotal/CountTotal";
 import Header from "../Header/Header";
 import ListRec from "../ListRec/ListRec";
 import Main from "../Main/Main";
@@ -14,6 +15,7 @@ export default function App() {
       <UnderMain/>
       <AboutUs/>
       <ListRec/>
+      <CountTotal/>
     </>
   );
 }

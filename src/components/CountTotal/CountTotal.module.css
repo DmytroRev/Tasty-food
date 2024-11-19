@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 125px;
+    position: absolute;
+    top: 2290px;
+    right: 116px;
+    background-image: url('/public/backgroundCount.png');
+    background-color: #76A713;
+    width: 1287px;
+    height: 291px;
+    padding: 75px 56px;
+    font-family: "Oswald", sans-serif;
+    color: #FFFFFF;
+}
+
+.counter {
+    font-size: 70px;
+    width: 200px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 400;
+}
