@@ -1,3 +1,4 @@
+import AboutUs from "../AboutUs/AboutUs";
 import Header from "../Header/Header";
 import Main from "../Main/Main";
 import Navigate from "../Navigate/Navigate";
@@ -10,6 +11,7 @@ export default function App() {
       <Navigate />
       <Main/>
       <UnderMain/>
+      <AboutUs/>
     </>
   );
 }

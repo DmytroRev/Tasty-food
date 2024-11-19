@@ -4,10 +4,10 @@ const Main = () => {
   return (
     <div className={css.container}>
         <div>
-      <p className={css.containerText}>
+      <h1 className={css.containerText}>
         Tasty & <br /> Healthy <span className={css.textSpan}>Organic</span>
         <br /> Food Everyday
-      </p>
+      </h1>
       <button className={css.btn}>Shop now</button>
       </div>
       <div className={css.containerBlock}>

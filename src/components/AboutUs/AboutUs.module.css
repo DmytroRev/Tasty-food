@@ -1,0 +1,78 @@
+.container {
+    position: relative;
+    display: flex;
+}
+
+.containerBlock {
+ background-color: #FF6600;  
+ width: 385px;
+ height: 500px; 
+ padding: 61px 120px;
+}
+
+.textInBlock {
+    text-transform: uppercase;
+    color: transparent; 
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+  -webkit-text-stroke: 3px  #FF812E; 
+    writing-mode: vertical-rl; 
+    transform: rotate(180deg);
+    font-size: 90px;
+}
+
+.imgGirl {
+position: absolute;
+top: 0;
+left: 214px;
+width: 333px;
+}
+
+.containerWithInfo {
+    margin-left: 327px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    width: 392px;
+    margin-bottom: 38px;
+}
+
+.paragraph {
+    width: 570px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.containerForOtherInfo {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.containerWithOtherInfo {
+    display: flex;
+}
+
+.img {
+    margin-right: 14px;   
+}
+
+.otherTitle {
+    font-family: "Oswald", sans-serif;
+font-size: 20px;
+font-weight: 500;
+margin-bottom: 15px;
+}
+
+.otherParagraph {
+    width: 170px;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.5;
+}
