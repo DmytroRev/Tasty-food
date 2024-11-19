@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    padding: 100px 115px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.containerCardBrocoli {
+    display: flex;
+    align-items: center;
+    width: 570px;
+    height: 270px;
+    padding: 44px 28px 39px 20px;
+background-color: #FFDAB9;
+}
+
+
+.title {
+font-family: "Oswald", sans-serif;
+font-size: 22px;
+font-weight: 700;
+margin-bottom: 18px;
+}
+
+.info {
+    font-weight: 300;
+    opacity: 0.7;
+    font-size: 16px;
+    max-width: 243px;
+}
+
+.btnBrocoli {
+    background-color: #FF6600;
+    margin-top: 35px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    color: #fafafa;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.btnBrocoli:hover{
+    background-color: #FF8533;
+}
+
+.containerCardVegetables {
+    display: flex;
+    align-items: center;
+    width: 570px;
+    height: 270px;
+    padding: 44px 28px 39px 20px;
+    background-color: #D6EAF8;
+}
+
+.btnVgtls {
+    background-color: #3498DB;
+    margin-top: 35px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    color: #fafafa;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.btnVgtls:hover {
+    background-color: #85C1E9;
+}
