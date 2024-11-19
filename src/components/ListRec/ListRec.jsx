@@ -4,7 +4,7 @@ import css from "./ListRec.module.css";
 const arr = [
   {
     id: 1,
-    img: "/public/vagan.png",
+    img: "https://res.cloudinary.com/drg797a6g/image/upload/v1732026953/jy8bhzeiwu5ghdkjtelc.png",
     name: "Vegetables",
     desc: "Purchasing from select family farmers who farm onganically.",
   },
