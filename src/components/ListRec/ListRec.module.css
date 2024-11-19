@@ -1,0 +1,91 @@
+.container {
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    padding: 100px 115px;
+    gap: 30px;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 270px;
+    height: 354px;
+border: 2px solid #76A713;
+padding: 23px 35px;
+transition: all 0.3s ease;
+}
+
+.list:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    border-color: #DDDDDD;
+}
+
+.img {
+    width: 160px;
+    height: 120px;
+    margin-bottom: 14px;
+}
+
+.cardName {
+    margin-bottom: 13px;
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+font-weight: 600;
+}
+
+.cardDesc {
+    color: #888888;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 27px;
+}
+
+.btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #76A713;
+    color: #76A713;
+    background-color: transparent;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    width: 120px; 
+    height: 40px;
+    padding: 0 20px; 
+    background-color: #76A713;
+    color: #FFFFFF;
+    border-color: #76A713;
+}
+
+.btn svg {
+    transition: opacity 0.3s ease; 
+}
+
+.btn:hover svg {
+    opacity: 0; 
+}
+
+.btn::after {
+    content: "Shop Now";
+    font-size: 16px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.btn:hover::after {
+    opacity: 1;
+}

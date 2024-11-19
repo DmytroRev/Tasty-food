@@ -1,5 +1,6 @@
 import AboutUs from "../AboutUs/AboutUs";
 import Header from "../Header/Header";
+import ListRec from "../ListRec/ListRec";
 import Main from "../Main/Main";
 import Navigate from "../Navigate/Navigate";
 import UnderMain from "../UnderMain/UnderMain";
@@ -12,6 +13,7 @@ export default function App() {
       <Main/>
       <UnderMain/>
       <AboutUs/>
+      <ListRec/>
     </>
   );
 }
