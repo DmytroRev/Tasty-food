@@ -10,19 +10,19 @@ const arr = [
   },
   {
     id: 2,
-    img: "/public/strawberry.png",
+    img: "https://res.cloudinary.com/drg797a6g/image/upload/v1732031523/tqgskgvbbiojutkhndbk.png",
     name: "Fresh Fruits",
     desc: "Purchasing from select family farmers who farm onganically.",
   },
   {
     id: 3,
-    img: "/public/eggplant.png",
+    img: "https://res.cloudinary.com/drg797a6g/image/upload/v1732031548/x4l1v4wb5jlrj5fbqsle.png",
     name: "Eggpent",
     desc: "Purchasing from select family farmers who farm onganically.",
   },
   {
     id: 4,
-    img: "/public/tomato.png",
+    img: "https://res.cloudinary.com/drg797a6g/image/upload/v1732031539/qfyylc3kzv9mvlqnjfn7.png",
     name: "Tomato",
     desc: "Purchasing from select family farmers who farm onganically.",
   },
