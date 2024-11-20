@@ -1,0 +1,28 @@
+.categoryButtons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .filterBtn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #EBEBEB;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .filterBtn:hover {
+    background-color: #76a713;
+    color: #fff;
+  }
+  
+  .active {
+    background-color: #76a713;
+    color: #fff;
+  }
+  

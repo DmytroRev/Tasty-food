@@ -1,0 +1,68 @@
+ .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 370px;
+    /* height: 553px; */
+}
+
+.containerImg {
+    display: flex;
+    justify-content: center;
+    border-left: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+}
+
+.img {
+    max-width: 250px;
+    height: 250px;
+}
+
+.containerWithInfo {
+    background-color: #F8F8F8;
+    padding: 21px 125px 30px;
+}
+
+.name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.oldPrice {
+    font-size: 14px;
+    font-weight: 400;
+    color: silver;
+    text-decoration: line-through;
+    
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 500;
+    color: #76A713;
+    margin-bottom: 10px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #76A713;
+    width: 120px;
+    height: 40px;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #94C531;
+}

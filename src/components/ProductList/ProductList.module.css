@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+padding: 256px 115px;
+}
+
+.title {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
