@@ -1,0 +1,41 @@
+.modalContent {
+    text-align: center;
+  }
+  
+  .image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .controls button {
+    background-color: #76a713;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .controls button:hover {
+    background-color: #94c531;
+  }
+  

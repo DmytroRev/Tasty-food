@@ -1,0 +1,144 @@
+ .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 370px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+  }
+
+
+  
+.containerImg {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border: 2px solid #DDDDDD;
+    border-bottom: none;
+    transition: all 0.3s ease;
+}
+
+.containerImg:hover {
+    border-left: 2px solid #76A713;
+    border-top: 2px solid #76A713;
+    border-right: 2px solid #76A713;
+}
+
+.img {
+    max-width: 325px;
+    height: 250px;
+
+  transition: transform 0.3s ease;
+}
+
+.container:hover .img {
+    transform: scale(1.05); 
+  }
+
+.containerWithInfo {
+    background-color: #F8F8F8;
+    padding: 21px 125px 30px;
+}
+
+.name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+
+.oldPrice {
+    font-size: 14px;
+    font-weight: 400;
+    color: silver;
+    text-decoration: line-through;
+    
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 500;
+    color: #76A713;
+    margin-bottom: 10px;
+}
+
+.discountPercent {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    width: 60px;
+    height: 25px;
+    color: white;
+    background-color: #FF6600;
+}
+
+
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #76A713;
+    width: 120px;
+    height: 40px;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #94C531;
+}
+
+.hoverButtons {
+    position: absolute;
+    top: 90px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .containerImg:hover .hoverButtons {
+    opacity: 1;
+  }
+  
+  .iconButton {
+    display: flex;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .iconButton:hover {
+    background-color: #f8f8f8;
+    transform: scale(1.1);
+  }
+  
+  .iconButton svg {
+    color: #333;
+  }
+  

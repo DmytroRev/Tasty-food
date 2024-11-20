@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+padding: 256px 115px;
+}
+
+.title {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.paginationContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+  }
+  
+  .pageNum {
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 15px;
+font-weight: 400;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .pageNum:hover {
+    background-color: #94C531;
+    color: white;
+  }
+  
+  .active .pageNum {
+    background-color: #76A713;
+    color: white;
+    
+  }
+  
+  .prevArrow,
+  .nextArrow {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: #555;
+    transition: color 0.3s ease;
+  }
+  
+  .prevArrow:hover,
+  .nextArrow:hover {
+    color: #76A713;
+  }
+
+  .disabled {
+    pointer-events: none;
+    color: #ccc;
+    opacity: 0.5;
+  }
