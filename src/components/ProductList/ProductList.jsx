@@ -61,18 +61,22 @@ const ProductList = () => {
         ))}
       </div>
       {pageCount > 1 && (
+      <div className={css.paginationContainer}>
         <ReactPaginate
           previousLabel="←"
           nextLabel="→"
           pageCount={pageCount}
+          forcePage={currentPage - 0}
           onPageChange={handlePageClick}
-          containerClassName="pagination"
-          activeClassName="active"
-          previousClassName="prev-arrow"
-          nextClassName="next-arrow"
-          pageLinkClassName="page-num"
+          containerClassName={css.pagination}
+          activeClassName={css.active}
+          previousClassName={css.prevArrow}
+          nextClassName={css.nextArrow}
+          disabledClassName={css.disabled}
+          pageLinkClassName={css.pageNum}
         />
-      )}
+      </div>
+    )}
     </div>
   );
 };

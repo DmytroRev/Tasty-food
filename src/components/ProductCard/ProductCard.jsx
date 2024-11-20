@@ -16,6 +16,7 @@ const ProductCard = ({ product }) => {
             <>
               <span className={css.oldPrice}>${product.price.toFixed(2)} <span style={{color: '#76A713', fontSize: 15}}>-</span></span>
               <span className={css.price}> ${product.discountPrice.toFixed(2)}</span>
+              <span className={css.discountPercent}>Off {product.discountPercent}%</span>
             </>
           ) : (
             `$${product.price.toFixed(2)}`
@@ -40,6 +41,7 @@ const ProductCard = ({ product }) => {
       name: PropTypes.string.isRequired,
       price: PropTypes.number.isRequired,
       discountPrice: PropTypes.number,
+      discountPercent: PropTypes.number,
       isDiscounted: PropTypes.bool,
       rating: PropTypes.number.isRequired,
       image: PropTypes.string.isRequired,
