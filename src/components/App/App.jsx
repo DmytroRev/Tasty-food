@@ -1,5 +1,6 @@
 import AboutUs from "../AboutUs/AboutUs";
 import CountTotal from "../CountTotal/CountTotal";
+import Discount from "../Discount/Discount";
 import Header from "../Header/Header";
 import ListRec from "../ListRec/ListRec";
 import Main from "../Main/Main";
@@ -18,6 +19,7 @@ export default function App() {
       <ListRec/>
       <CountTotal/>
       <ProductList/>
+      <Discount/>
     </>
   );
 }
