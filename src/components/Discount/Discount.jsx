@@ -17,7 +17,7 @@ const Discount = () => {
       </div>
       <div className={css.figure}>
         <img
-          src="/public/rectangle.png"
+          src="https://res.cloudinary.com/drg797a6g/image/upload/v1732219316/m0tlwc0eylw2ps1vavje.png"
           alt="rectangle"
           style={{ height: 380 }}
         />
