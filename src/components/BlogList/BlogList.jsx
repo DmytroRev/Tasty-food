@@ -3,7 +3,7 @@ import data from '../../blog.json';
 import css from './BlogList.module.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import BlogCard from '../BlogCard/BlogCard';
 
 const BlogList = () => {
@@ -19,11 +19,22 @@ const BlogList = () => {
           }}
           loop={true}
           autoplay={{
-            delay: 3000,
+            delay: 2000,
             disableOnInteraction: false,
           }}
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
           className="mySwiper"
+          onSwiper={(swiper) => {
+            const container = document.querySelector(`.${css.container}`);
+            
+            container.addEventListener('mouseenter', () => {
+              swiper.autoplay.stop(); // Остановить autoplay при наведении
+            });
+
+            container.addEventListener('mouseleave', () => {
+              swiper.autoplay.start(); // Запустить autoplay при убирании курсора
+            });
+          }}
         >
           {data.map((card) => (
             <SwiperSlide key={card.id} style={{display: "flex", gap: 30}}>

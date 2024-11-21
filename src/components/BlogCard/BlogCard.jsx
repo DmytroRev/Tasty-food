@@ -14,7 +14,7 @@ const BlogCard = ({ card }) => {
       <div className={css.containerInfo}>
       <div className={css.containerInfoHead}>
         <p className={css.info}>
-          <FaUser  className={css.icon}/> By: {card.author}
+          <FaUser  className={css.icon}/>  {card.author}
         </p>
         <p className={css.info}>
           <MdDiscount  className={css.icon}/>{card.service}

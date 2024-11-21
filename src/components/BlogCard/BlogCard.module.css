@@ -1,18 +1,34 @@
+.container {
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+}
+
 .img {
     width: 370px;
-
+height: 250px;
     object-fit: cover;
+
 }
+
+
 
 .containerInfo {
 max-width: 370px;
 padding: 29px 16px;
+border: 1px solid #DDDDDD;
+border-top: none;
 }
 
 .containerInfoHead {
     display: flex;
     justify-content: center;
-    gap: 52px;}
+    flex-wrap: nowrap;
+    gap: 52px;
+}
 
 .icon {
     color: #76A713;
@@ -29,12 +45,19 @@ font-weight: 500;
 margin-bottom: 18px;
 }
 
+
+
 .title {
     font-family: "Oswald", sans-serif;
+    height: 90px;
     font-size: 30px;
     font-weight: 500;
-padding-bottom: 18px;
 border-bottom: 1px solid #DDDDDD;
+overflow: hidden; 
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+text-overflow: ellipsis;
 }
 
 .containerUnder {
@@ -61,12 +84,9 @@ border-bottom: 1px solid #DDDDDD;
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    transition: all 2s ease
-    ;}
-
-.btn:hover {
-    border-bottom: 1px solid #76A713;
 }
+
+
 
 .iconArrow {
     color: #76A713;
