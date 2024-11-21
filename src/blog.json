@@ -1,0 +1,73 @@
+[{
+    "id": 1,
+    "name": "Lime",
+    "title": "Force of Nature: Fruits and Vegetables for Health",
+    "author": "Noah.Smith",
+    "service": "Service",
+    "comments": 13,
+    "date": "May 11, 2021",
+    "like": 159,
+    "watch": 518,
+    "description": "Limes are a treasure trove of vitamin C, which strengthens the immune system and helps the body fight off colds. Its bright, sour flavor is ideal for making refreshing drinks and sauces. This citrus fruit is also good for skin health and digestive health.",
+    "image": "https://res.cloudinary.com/drg797a6g/image/upload/v1732176456/xy1ajoqpfz6bmkbxh9ld.png"
+},{
+    "id": 2,
+    "name": "Avocado",
+    "title": "Health in Every Bite: Inspiration from Nature",
+    "author": "Mia_Johnson",
+    "service": "Service",
+    "comments": 9,
+    "date": "August 9, 2022",
+    "like": 57,
+    "watch": 259,
+    "description": "Avocados are a source of healthy fats and vitamins that support heart and brain health. This superfood is rich in potassium, which lowers blood pressure, and antioxidants, which improve the overall health of the body. Its creamy flavor pairs perfectly with salads, toast and smoothies.",
+    "image": "https://res.cloudinary.com/drg797a6g/image/upload/v1732176455/wasaafhtxosnfwveb50s.png"
+},{
+    "id": 3,
+    "name": "Strawberry",
+    "title": "Fresh, tasty and healthy: Your guide to superfoods",
+    "author": "LucasScott",
+    "service": "Health",
+    "comments": 21,
+    "date": "September 30, 2024",
+    "like": 110,
+    "watch": 339,
+    "description": "Strawberries are a natural dessert rich in antioxidants and vitamin C. It helps strengthen blood vessels and maintain healthy eyes and skin. This juicy fruit is often used in desserts, smoothies and salads, adding bright color and sweet flavor.",
+    "image": "https://res.cloudinary.com/drg797a6g/image/upload/v1732176456/otk6qzacymyhbqbpnfss.png"
+},{
+    "id": 4,
+    "name": "Broccoli",
+    "title": "Food as Art: Tips for Health and Energy",
+    "author": "Chloe.Davis",
+    "service": "Health",
+    "comments": 11,
+    "date": "July 22, 2024",
+    "like": 74,
+    "watch": 311,
+    "description": "Broccoli is one of the healthiest vegetables, rich in fiber, vitamins A and C, and folic acid. It boosts immunity, supports bone health and improves digestion. Steamed, baked or in salads, broccoli is always a great choice.",
+    "image": "https://res.cloudinary.com/drg797a6g/image/upload/v1732192196/qcp3wna03cz4dhgi6mjz.jpg"
+},{
+    "id": 5,
+    "name": "Pomegranate",
+    "title": "A Taste for Life: Useful information about your favorite foods",
+    "author": "Liam_Roberts",
+    "service": "Products",
+    "comments": 19,
+    "date": "January 31, 2023",
+    "like": 56,
+    "watch": 252,
+    "description": "Pomegranate is famous for its high antioxidant content, which slows aging and protects cells from damage. Its juice improves heart function and the grains are a real source of vitamins. This fruit is ideal for garnishing dishes, adding exotic flavor and benefits.",
+    "image": "https://res.cloudinary.com/drg797a6g/image/upload/v1732176455/kvmk2qztjapyqsz966ae.jpg"
+},{
+    "id": 6,
+    "name": "Red currant berry",
+    "title": "The Way to Health: All about the benefits of natural products",
+    "author": "AvaWilson",
+    "service": "Products",
+    "comments": 25,
+    "date": "October 31, 2024",
+    "like": 218,
+    "watch": 651,
+    "description": "Red currant is a small berry with a high content of vitamin C, iron and antioxidants. It helps strengthen blood vessels, improves metabolism and helps cleanse the body. This colorful berry adds freshness to baked goods, jams and drinks.",
+    "image": "https://res.cloudinary.com/drg797a6g/image/upload/v1732176455/qc7tqb3xixt274wbpo4u.jpg"
+}]
