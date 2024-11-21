@@ -1,4 +1,5 @@
 import AboutUs from "../AboutUs/AboutUs";
+import Blog from "../Blog/Blog";
 import CountTotal from "../CountTotal/CountTotal";
 import Discount from "../Discount/Discount";
 import Header from "../Header/Header";
@@ -20,6 +21,7 @@ export default function App() {
       <CountTotal/>
       <ProductList/>
       <Discount/>
+      <Blog />
     </>
   );
 }

@@ -1,0 +1,13 @@
+.container {
+    padding: 77px 115px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 42px;
+    color: #191D28;
+    text-transform: uppercase;
+}
