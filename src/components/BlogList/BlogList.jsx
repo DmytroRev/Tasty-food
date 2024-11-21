@@ -1,45 +1,33 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
 import data from '../../blog.json';
 import css from './BlogList.module.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Autoplay, Pagination } from 'swiper/modules';
+import 'swiper/css/navigation'; // Подключаем стили для навигации
 import BlogCard from '../BlogCard/BlogCard';
-
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const BlogList = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true
+  };
   return (
-    <div className={css.container}>
+     <div className={css.container}>
       <h2 className={css.title}>Latest blog</h2>
-      {/* Добавляем обертку для зоны карточек */}
-      <div
-        className={css.cardZone}
-        onMouseEnter={() => {
-          document.querySelector('.mySwiper').swiper.autoplay.stop();
-        }}
-        onMouseLeave={() => {
-          document.querySelector('.mySwiper').swiper.autoplay.start();
-        }}
-      >
-        <Swiper
-          slidesPerView={3}
-          spaceBetween={30}
-          pagination={{
-            clickable: true,
-          }}
-          loop={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-          modules={[Pagination, Autoplay]}
-          className="mySwiper"
-        >
+      <div className={css.cardZone}>
+        <Slider {...settings}>
           {data.map((card) => (
-            <SwiperSlide key={card.id} style={{ display: 'flex', gap: 30 }}>
+            <div key={card.id}>
               <BlogCard card={card} />
-            </SwiperSlide>
+            </div>
           ))}
-        </Swiper>
+        </Slider>
       </div>
     </div>
   );
