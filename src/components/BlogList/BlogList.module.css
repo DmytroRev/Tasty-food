@@ -1,6 +1,10 @@
 .container {
     padding: 77px 115px;
 }
+.cardZone {
+    position: relative;
+    z-index: 1;
+  }
 
 .title {
     text-align: center;
@@ -11,3 +15,4 @@
     color: #191D28;
     text-transform: uppercase;
 }
+

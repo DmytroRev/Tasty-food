@@ -10,7 +10,16 @@ const BlogList = () => {
   return (
     <div className={css.container}>
       <h2 className={css.title}>Latest blog</h2>
-      <div>
+      {/* Добавляем обертку для зоны карточек */}
+      <div
+        className={css.cardZone}
+        onMouseEnter={() => {
+          document.querySelector('.mySwiper').swiper.autoplay.stop();
+        }}
+        onMouseLeave={() => {
+          document.querySelector('.mySwiper').swiper.autoplay.start();
+        }}
+      >
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
@@ -19,25 +28,14 @@ const BlogList = () => {
           }}
           loop={true}
           autoplay={{
-            delay: 2000,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           modules={[Pagination, Autoplay]}
           className="mySwiper"
-          onSwiper={(swiper) => {
-            const container = document.querySelector(`.${css.container}`);
-            
-            container.addEventListener('mouseenter', () => {
-              swiper.autoplay.stop(); // Остановить autoplay при наведении
-            });
-
-            container.addEventListener('mouseleave', () => {
-              swiper.autoplay.start(); // Запустить autoplay при убирании курсора
-            });
-          }}
         >
           {data.map((card) => (
-            <SwiperSlide key={card.id} style={{display: "flex", gap: 30}}>
+            <SwiperSlide key={card.id} style={{ display: 'flex', gap: 30 }}>
               <BlogCard card={card} />
             </SwiperSlide>
           ))}
