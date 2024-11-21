@@ -1,5 +1,5 @@
 import AboutUs from "../AboutUs/AboutUs";
-import Blog from "../Blog/Blog";
+import Blog from "../BlogList/BlogList";
 import CountTotal from "../CountTotal/CountTotal";
 import Discount from "../Discount/Discount";
 import Header from "../Header/Header";

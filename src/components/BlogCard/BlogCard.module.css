@@ -1,0 +1,75 @@
+.img {
+    width: 370px;
+
+    object-fit: cover;
+}
+
+.containerInfo {
+max-width: 370px;
+padding: 29px 16px;
+}
+
+.containerInfoHead {
+    display: flex;
+    justify-content: center;
+    gap: 52px;}
+
+.icon {
+    color: #76A713;
+    margin-right: 4px;
+    width: 14px;
+    height: 14px;
+}
+
+.info {
+    display: flex;
+align-items: center;
+font-size: 11px;
+font-weight: 500;
+margin-bottom: 18px;
+}
+
+.title {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+padding-bottom: 18px;
+border-bottom: 1px solid #DDDDDD;
+}
+
+.containerUnder {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 19px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: #76A713;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    transition: all 2s ease
+    ;}
+
+.btn:hover {
+    border-bottom: 1px solid #76A713;
+}
+
+.iconArrow {
+    color: #76A713;
+    width: 20px;
+    height: 20px;
+}
