@@ -2,6 +2,9 @@
     padding: 77px 115px;
 }
 .cardZone {
+  width: 100%; /* Или другой фиксированный размер */
+  margin: 0 auto;
+
     position: relative;
     z-index: 1;
   }
