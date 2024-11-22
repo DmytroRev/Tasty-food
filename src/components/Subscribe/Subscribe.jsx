@@ -12,7 +12,7 @@ const Subscribe = () => {
         />
       </div>
       <div>
-        <img src="/public/arrowWhite.png" alt="arrow" className={css.arrow} />
+        <img src="https://res.cloudinary.com/drg797a6g/image/upload/v1732275753/tdvxsgf0ucmyyizse6pn.png" alt="arrow" className={css.arrow} />
       </div>
       <div className={css.containerWithInfo}>
         <h2 className={css.title}>Subscribe To Newsletter</h2>

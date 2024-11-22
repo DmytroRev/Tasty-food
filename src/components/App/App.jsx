@@ -2,6 +2,7 @@ import AboutUs from "../AboutUs/AboutUs";
 import Blog from "../BlogList/BlogList";
 import CountTotal from "../CountTotal/CountTotal";
 import Discount from "../Discount/Discount";
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import ListRec from "../ListRec/ListRec";
 import Main from "../Main/Main";
@@ -24,6 +25,7 @@ export default function App() {
       <Discount/>
       <Blog />
       <Subscribe/>
+      <Footer />
     </>
   );
 }

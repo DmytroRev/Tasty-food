@@ -52,11 +52,15 @@ left: 420px;
     background-color: transparent;
     width: 370px;
     height: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     border: none;
+    border-color: #9AD423;
     border-bottom: 2px solid #9AD423;
     padding-left: 10px;
     color: #FFFFFF;
     font-weight: 400;
+    transition: all 0.1s ease;
 }
 
 .inp::placeholder {
@@ -68,6 +72,8 @@ left: 420px;
 
 .inp:focus {
 outline: none;
+border-radius: 5px;
+    border: 2px solid #9AD423;
 }
 
 .btn {
