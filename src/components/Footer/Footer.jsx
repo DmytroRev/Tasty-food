@@ -11,7 +11,7 @@ const Footer = () => {
       <div className={css.containerBlock}>
         <div>
           <img
-            src="/public/logoWhite.png"
+            src="https://res.cloudinary.com/drg797a6g/image/upload/v1732287922/utwjoljrcmodl6uaowrz.png"
             alt="logoFooter"
             style={{ marginBottom: 25 }}
           />
