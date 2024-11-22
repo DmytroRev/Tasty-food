@@ -61,7 +61,7 @@ const Footer = () => {
           <h4 className={css.title}>Blog Post</h4>
           <ul className={css.containerListBlog}>
             <li className={css.listBlog}>
-              <img src="/public/water.png" alt="water" className={css.imgFooter}/>
+              <img src="https://console.cloudinary.com/pm/c-521d075ca346400c123cdeeaddffc5/media-explorer?assetId=3c103a8c77389a8135e53eca144e4803" alt="water" className={css.imgFooter}/>
               <div>
                 <h5 className={css.titleBlog}>
                   Choosing Plants For Water Conservation
@@ -70,7 +70,7 @@ const Footer = () => {
               </div>
             </li>
             <li className={css.listBlog}>
-              <img src="/public/earth.png" alt="earth" className={css.imgFooter}/>
+              <img src="https://res.cloudinary.com/drg797a6g/image/upload/v1732288054/glxfllnbfx1iid7kgxfm.png" alt="earth" className={css.imgFooter}/>
               <div>
                 <h5 className={css.titleBlog}>
                   Maintaining Your Yard This Year
@@ -79,7 +79,7 @@ const Footer = () => {
               </div>
             </li>
             <li className={css.listBlog}>
-              <img src="/public/kids.png" alt="kid" className={css.imgFooter}/>
+              <img src="https://res.cloudinary.com/drg797a6g/image/upload/v1732288054/e5c3btoymzaq5syisjxc.png" alt="kid" className={css.imgFooter}/>
               <div>
                 <h5 className={css.titleBlog}>
                   Tips For Managing Your Irrigation System
