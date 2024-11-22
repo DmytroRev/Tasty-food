@@ -7,6 +7,7 @@ import ListRec from "../ListRec/ListRec";
 import Main from "../Main/Main";
 import Navigate from "../Navigate/Navigate";
 import ProductList from "../ProductList/ProductList";
+import Subscribe from "../Subscribe/Subscribe";
 import UnderMain from "../UnderMain/UnderMain";
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
       <ProductList/>
       <Discount/>
       <Blog />
+      <Subscribe/>
     </>
   );
 }
