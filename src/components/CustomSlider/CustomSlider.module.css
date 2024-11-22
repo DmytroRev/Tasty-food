@@ -1,7 +1,7 @@
 .sliderContainer {
     position: relative;
     width: 100%;
-    max-width: 1200px; /* Максимальная ширина контейнера */
+    max-width: 1200px;
     margin: 0 auto;
     overflow: visible;
   }
@@ -17,9 +17,9 @@
   }
   
   .slide {
-    width: 370px; /* Ширина карточки */
+    width: 370px; 
     flex-shrink: 0;
-    margin-right: 30px; /* Заменяет gap */
+    margin-right: 30px; 
 
   }
 
