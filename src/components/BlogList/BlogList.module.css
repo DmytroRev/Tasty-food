@@ -2,6 +2,9 @@
     padding: 77px 115px;
 }
 .cardZone {
+  width: 100%; 
+  margin: 0 auto;
+
     position: relative;
     z-index: 1;
   }
@@ -15,4 +18,3 @@
     color: #191D28;
     text-transform: uppercase;
 }
-

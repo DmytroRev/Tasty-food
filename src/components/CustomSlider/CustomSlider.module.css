@@ -1,0 +1,60 @@
+.sliderContainer {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: visible;
+  }
+  
+  .slider {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .sliderTrack {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    width: 370px; 
+    flex-shrink: 0;
+    margin-right: 30px; 
+
+  }
+
+  .slider {
+    overflow: hidden; 
+  }
+
+  .arrowLeft,
+  .arrowRight {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.arrowLeft { 
+    left: -70px; 
+  }
+  
+  .arrowRight {
+    right: -40px; 
+  }
+  
+  
+  .icon {
+      width: 40px;
+      height: 40px;
+      color: #76a713;
+      transition: color 0.3s ease;
+    }
+
+    .icon:hover {
+      color: #94c531;
+    }
