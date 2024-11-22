@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+gap: 199px;
+    padding: 225px 198px 28px 111px;
+    background-color: #191D28;
+}
+
+.containerBlock {
+    display: flex;
+    gap: 30px;
+}
+
+.text {
+    width: 270px;
+    color: #CCCCCC;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+
+
+.containerListSocial {
+    display: flex;
+    gap: 30px;
+}
+
+.iconMedia {
+    cursor: pointer;
+        fill: silver;
+        transition: fill 0.3s ease;
+
+    }
+
+.iconMedia:hover {
+    fill: #76A713;
+}
+
+
+.title{
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 33px;
+}
+
+.containerList {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+font-size: 16px;
+color: #CCCCCC;
+font-weight: 400;
+}
+
+.list {
+    display: flex;
+position: relative;
+cursor: pointer;
+transition: color 0.3s ease;
+font-size: 16px;
+color: #CCCCCC;
+font-weight: 400;
+}
+
+.list::before {
+    content: '•';
+    color: #76A713;
+    left: 0;
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+.list:hover {
+color: #76A713;
+}
+
+.containerListBlog {
+    display: flex;
+    flex-direction: column;
+row-gap: 10px;
+
+}
+
+.listBlog {
+    display: flex;
+    gap: 14px;
+width: 267px;
+}
+
+
+.titleBlog {
+    font-family: "Oswald", sans-serif;
+    font-size: 17px;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.parag {
+    font-size: 13px;
+    font-weight: 300;
+    color: #CCCCCC;
+}
