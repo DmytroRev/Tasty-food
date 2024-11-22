@@ -1,9 +1,12 @@
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import css from "./Footer.module.css";
 import { RiInstagramFill } from "react-icons/ri";
+import { FaLocationDot } from "react-icons/fa6";
+import { BsFillTelephoneFill } from "react-icons/bs";
 
 const Footer = () => {
   return (
+    <div>
     <div className={css.container}>
       <div className={css.containerBlock}>
         <div>
@@ -58,29 +61,54 @@ const Footer = () => {
           <h4 className={css.title}>Blog Post</h4>
           <ul className={css.containerListBlog}>
             <li className={css.listBlog}>
-              <img src="/public/water.png" alt="water" />
+              <img src="/public/water.png" alt="water" className={css.imgFooter}/>
               <div>
-                <h5 className={css.titleBlog}>Choosing Plants For Water Conservation</h5>
+                <h5 className={css.titleBlog}>
+                  Choosing Plants For Water Conservation
+                </h5>
                 <p className={css.parag}>October 27, 2024</p>
               </div>
             </li>
             <li className={css.listBlog}>
-              <img src="/public/earth.png" alt="earth" />
+              <img src="/public/earth.png" alt="earth" className={css.imgFooter}/>
               <div>
-                <h5 className={css.titleBlog}>Maintaining Your Yard This Year</h5>
+                <h5 className={css.titleBlog}>
+                  Maintaining Your Yard This Year
+                </h5>
                 <p className={css.parag}>November 5, 2024</p>
               </div>
             </li>
             <li className={css.listBlog}>
-              <img src="/public/kids.png" alt="kid" />
+              <img src="/public/kids.png" alt="kid" className={css.imgFooter}/>
               <div>
-                <h5 className={css.titleBlog}>Tips For Managing Your Irrigation System</h5>
+                <h5 className={css.titleBlog}>
+                  Tips For Managing Your Irrigation System
+                </h5>
                 <p className={css.parag}>November 10, 2024</p>
               </div>
             </li>
           </ul>
         </div>
-      </div>
+        <div>
+          <h4 className={css.title}>Officeal Info</h4>
+          <div style={{marginBottom: 20}}>
+            <p className={css.officialInfo} style={{marginBottom: 22}}>
+              <FaLocationDot className={css.iconSocialFooter}/>
+              30 Commercial Road Fratton, Australia
+            </p>
+            <a href="tel:+1-888-452-1829" className={css.officialInfo}>
+              <BsFillTelephoneFill className={css.iconSocialFooter}/>
+              1-888-452-1829
+            </a>
+          </div>
+          <div>
+            <h5 className={css.titleHours}>Open Hours:</h5>
+            <p className={css.dateFooter}>Mon – Sat: 8 am – 5 pm, Sunday: CLOSED</p>
+          </div>
+        </div>
+      </div>    
+    </div>
+    <div className={css.dateCreate}><p className={css.dateCreateInfo}>Copyright © 2021, Orgamic. All Rights Reserved.</p></div>
     </div>
   );
 };

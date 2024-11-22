@@ -1,7 +1,7 @@
 .container {
     display: flex;
-gap: 199px;
-    padding: 225px 198px 28px 111px;
+justify-content: space-between;
+    padding: 225px 198px 61px;
     background-color: #191D28;
 }
 
@@ -89,17 +89,66 @@ row-gap: 10px;
 width: 267px;
 }
 
+.imgFooter {
+    width: 70px;
+    height: 70px;
+}
+
 
 .titleBlog {
     font-family: "Oswald", sans-serif;
     font-size: 17px;
     color: #FFFFFF;
     font-weight: 400;
-    margin-bottom: 14px;
+    margin-bottom: 7px;
 }
 
 .parag {
     font-size: 13px;
     font-weight: 300;
     color: #CCCCCC;
+}
+
+.iconSocialFooter {
+    width: 15px;
+    height: 15px;
+    color: #76A713;
+    margin-right: 10px;
+}
+
+.officialInfo {
+    color: #CCCCCC;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 185px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.titleHours {
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.dateFooter {
+    font-size: 16px;
+    max-width: 188px;
+    font-weight: 400;
+    color: #CCCCCC;
+}
+
+.dateCreate {
+padding: 27px;
+text-align: center;
+background-color: #191D28;
+border-top: 1px solid #DDDDDD;
+}
+
+.dateCreateInfo {
+    font-size: 16px;
+    color: #CCCCCC;
+    font-weight: 400;
 }
