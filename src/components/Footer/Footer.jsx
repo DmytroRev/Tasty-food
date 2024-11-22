@@ -61,7 +61,7 @@ const Footer = () => {
           <h4 className={css.title}>Blog Post</h4>
           <ul className={css.containerListBlog}>
             <li className={css.listBlog}>
-              <img src="https://console.cloudinary.com/pm/c-521d075ca346400c123cdeeaddffc5/media-explorer?assetId=3c103a8c77389a8135e53eca144e4803" alt="water" className={css.imgFooter}/>
+              <img src="https://res.cloudinary.com/drg797a6g/image/upload/v1732288054/dlsmxpy6sqp5lvbjcvl9.png" alt="water" className={css.imgFooter}/>
               <div>
                 <h5 className={css.titleBlog}>
                   Choosing Plants For Water Conservation
