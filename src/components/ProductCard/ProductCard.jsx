@@ -6,6 +6,7 @@ import { PiArrowsClockwiseLight, PiHeart } from "react-icons/pi";
 import { GoScreenFull } from "react-icons/go";
 import { useState } from "react";
 import ModalWrapper from "../ModalWrapper/ModalWrapper";
+import { IoCloseSharp } from "react-icons/io5";
 
 const ProductCard = ({ product }) => {
   const [selectImage, setSelectImage] = useState(null);
@@ -54,12 +55,35 @@ const handleModalOpen = (product) => {
         <button className={css.btn}>Buy</button>
         </div>
       </div>
-      {isModalOpen && selectImage && (
-        <ModalWrapper
-          isOpen={isModalOpen}
-          onClose={handleModalClose}
-          product={product} 
-        />
+      {isModalOpen && (
+        <ModalWrapper isOpen={isModalOpen} onClose={handleModalClose}>
+          <div className={css.modalContent}>
+
+            <div className={css.img}>
+              <img src={product.image} alt={product.name} />
+            </div>
+            <div className={css.containerWithInfo}>
+              <h2 className={css.title}>{product.name}</h2>
+              <p className={css.category}>{product.category}</p>
+              <p className={css.price}>
+          {product.isDiscounted ? (
+            <>
+              <span className={css.oldPrice}>${product.price.toFixed(2)} <span style={{color: '#76A713', fontSize: 15}}>-</span></span>
+              <span className={css.price}> ${product.discountPrice.toFixed(2)}</span>
+            </>
+          ) : (
+            `$${product.price.toFixed(2)}`
+          )}
+        </p>
+              <p>{product.description}</p>
+              <div className={css.rating}>
+        <Rating style={{maxWidth: 100}}
+        value={product.rating}
+        readOnly/>
+        </div>
+            </div>
+          </div>
+        </ModalWrapper>
       )}
       </div>
     );
@@ -74,6 +98,7 @@ const handleModalOpen = (product) => {
       isDiscounted: PropTypes.bool,
       rating: PropTypes.number.isRequired,
       image: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
     }).isRequired,
     products: PropTypes.arrayOf(
         PropTypes.shape({
