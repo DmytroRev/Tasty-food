@@ -47,7 +47,7 @@ const ProductList = () => {
 
   return (
     <div className={css.container}>
-      <h2 className={css.title}>Featured products</h2>
+      <h2 className={css.title}  id="products">Featured products</h2>
       <div>
         <CategoryFilter
           categories={categories}
@@ -55,7 +55,7 @@ const ProductList = () => {
           onCategoryToggle={onCategoryToggle}
         />
       </div>
-      <div className={css.card}>
+      <div className={css.card} >
         {displayProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}

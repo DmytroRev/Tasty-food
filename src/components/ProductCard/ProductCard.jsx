@@ -51,7 +51,7 @@ const handleModalOpen = (product) => {
         readOnly/>
         </div>
         <div style={{display: "flex", justifyContent:"center"}}>
-        <button className={css.btn}>Shop now</button>
+        <button className={css.btn}>Buy</button>
         </div>
       </div>
       {isModalOpen && selectImage && (

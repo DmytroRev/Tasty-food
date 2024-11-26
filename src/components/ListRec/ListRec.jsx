@@ -31,14 +31,15 @@ const arr = [
 const ListRec = () => {
   return (
     <div>
-      <ul className={css.container}>
+      <ul className={css.container}  id="shop">
         {arr.map((card) => (
           <li key={card.id} className={css.list}>
                 <img src={card.img} alt="vegan" className={css.img}/>
                 <h3 className={css.cardName}>{card.name}</h3>
                 <p className={css.cardDesc}>{card.desc}</p>
-                <button className={css.btn}><HiMiniArrowSmallRight style={{width: 20, height: 20}}/>
-                </button>
+                <a href="#products"><button className={css.btn}><HiMiniArrowSmallRight style={{width: 20, height: 20}}/>
+                </button></a>
+                
           </li>
         ))}
       </ul>

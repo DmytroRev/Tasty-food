@@ -1,0 +1,31 @@
+.scrollToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 40px; /* Уменьшенная ширина кнопки */
+    height: 40px; /* Уменьшенная высота кнопки */
+    background-color: #28a745; /* Основной зелёный цвет */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    font-size: 16px; /* Уменьшенный размер шрифта */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .visible {
+    display: flex;
+    opacity: 1;
+  }
+  
+  .scrollToTop:hover {
+    background-color: #218838; /* Более насыщенный зелёный при наведении */
+    transform: scale(1.1); /* Лёгкое увеличение при наведении */
+  }
+  

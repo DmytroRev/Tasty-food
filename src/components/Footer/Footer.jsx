@@ -48,11 +48,11 @@ const Footer = () => {
         <div className={css.containerListLink}>
           <h4 className={css.title}>Quick Link</h4>
           <ul className={css.containerList}>
-            <li className={css.list}>Home</li>
-            <li className={css.list}>Featured</li>
-            <li className={css.list}>About Us</li>
-            <li className={css.list}>Product</li>
-            <li className={css.list}>Blog</li>
+            <li><a href="/" className={css.list}>Home</a></li>
+            <li><a href="#products" className={css.list}>Featured</a></li>
+            <li><a href="#about" className={css.list}>About Us</a></li>
+            <li><a href="#products" className={css.list}>Product</a></li>
+            <li><a href="#blog" className={css.list}>Blog</a></li>
           </ul>
         </div>
       </div>
@@ -89,7 +89,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div>
+        <div id="contact">
           <h4 className={css.title}>Officeal Info</h4>
           <div style={{marginBottom: 20}}>
             <p className={css.officialInfo} style={{marginBottom: 22}}>

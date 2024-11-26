@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import AboutUs from "../AboutUs/AboutUs";
 import Blog from "../BlogList/BlogList";
 import CountTotal from "../CountTotal/CountTotal";
@@ -8,6 +9,7 @@ import ListRec from "../ListRec/ListRec";
 import Main from "../Main/Main";
 import Navigate from "../Navigate/Navigate";
 import ProductList from "../ProductList/ProductList";
+import ScrollToTopButton from "../ScrollToTopButton/ScrollToTopButton";
 import Subscribe from "../Subscribe/Subscribe";
 import UnderMain from "../UnderMain/UnderMain";
 
@@ -26,6 +28,8 @@ export default function App() {
       <Blog />
       <Subscribe/>
       <Footer />
+      <ScrollToTopButton/>
+      <Toaster/>
     </>
   );
 }

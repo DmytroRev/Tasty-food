@@ -1,6 +1,35 @@
+import { useState } from "react";
 import css from "./Subscribe.module.css";
+import toast from "react-hot-toast";
 
 const Subscribe = () => {
+  const [email, setEmail] = useState('')
+
+
+  const handleSubs = () => {
+    if (!email.trim()) {
+      toast.error("Oops! It seems you haven't entered anything...", {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    } else {
+      toast.success("You have successfully subscribed to our newsletter!", {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      setEmail(""); // Сбросить инпут после успешной подписки
+    }
+  };
   return (
     <div style={{position: "relative", width: 0, height: 0}}>
     <div className={css.container}>
@@ -21,8 +50,10 @@ const Subscribe = () => {
             type="email"
             placeholder="Enter your email address..."
             className={css.inp}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
-          <button className={css.btn}>Subscribe Now</button>
+          <button className={css.btn}  onClick={handleSubs}>Subscribe Now</button>
         </div>
       </div>
     </div>

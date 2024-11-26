@@ -25,7 +25,7 @@ padding: 256px 115px;
 .paginationContainer {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: auto;
   }
   
   .pagination {

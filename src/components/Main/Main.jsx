@@ -8,7 +8,7 @@ const Main = () => {
         Tasty & <br /> Healthy <span className={css.textSpan}>Organic</span>
         <br /> Food Everyday
       </h1>
-      <button className={css.btn}>Shop now</button>
+      <button className={css.btn}><a href="#products" style={{textDecoration: 'none', color: '#FFFFFF'}}>Shop now</a></button>
       </div>
       <div className={css.containerBlock}>
         <p className={css.textInBlock}>Orange Lemon</p>

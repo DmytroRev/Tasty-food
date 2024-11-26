@@ -8,11 +8,11 @@ const Navigate = () => {
       <img src="/logo.png" alt="logo" className={css.img} />
       <div className={css.ContainerForListAndBtns}>
       <ul className={css.containerList}>
-        <li className={css.list}>Home +</li>
-        <li className={css.list}>About +</li>
-        <li className={css.list}>Shop +</li>
-        <li className={css.list}>Page +</li>
-        <li className={css.list}>Contact</li>
+        <li><a href="/"  className={css.list}>Home +</a></li>
+        <li><a href="#about" className={css.list}>About +</a></li>
+        <li><a href="#shop" className={css.list}>Shop +</a></li>
+        <li><a href="#products"  className={css.list}>Products +</a></li>
+        <li><a href="#contact" className={css.list}>Contact</a></li>
       </ul>
       <div className={css.containerForBtns}>
       <button className={css.btnLogin}>Login</button>
