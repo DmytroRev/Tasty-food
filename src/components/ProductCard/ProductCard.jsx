@@ -6,17 +6,14 @@ import { PiArrowsClockwiseLight, PiHeart } from "react-icons/pi";
 import { GoScreenFull } from "react-icons/go";
 import { useState } from "react";
 import ProductCardModal from "../ProductCardModal/ProductCardModal";
+import AddToCartButton from "../AddToCartButton/AddToCartButton";
 
 const ProductCard = ({ product }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleModalOpen = () => {
-    setIsModalOpen(true);
-  };
+const handleModalOpen = () => setIsModalOpen(true);
+const handleModalClose = () => setIsModalOpen(false);
 
-  const handleModalClose = () => {
-    setIsModalOpen(false);
-  };
 
   return (
     <div className={css.container}>
@@ -60,7 +57,7 @@ const ProductCard = ({ product }) => {
           <Rating style={{ maxWidth: 80 }} value={product.rating} readOnly />
         </div>
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <button className={css.btn}>Buy</button>
+          <AddToCartButton product={product} /> {/* Заменяем кнопку на новую с анимацией */}
         </div>
       </div>
       {isModalOpen && (

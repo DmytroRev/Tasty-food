@@ -3,8 +3,15 @@ import css from "./Footer.module.css";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import useScrollTo from "../hooks/useScrollTo";
 
 const Footer = () => {
+  const scrollToElement = useScrollTo()
+  
+  const handleLinkClick = (e, targetId) => {
+    e.preventDefault()
+    scrollToElement(targetId)
+  }
   return (
     <div>
     <div className={css.container}>
@@ -49,10 +56,10 @@ const Footer = () => {
           <h4 className={css.title}>Quick Link</h4>
           <ul className={css.containerList}>
             <li><a href="/" className={css.list}>Home</a></li>
-            <li><a href="#products" className={css.list}>Featured</a></li>
-            <li><a href="#about" className={css.list}>About Us</a></li>
-            <li><a href="#products" className={css.list}>Product</a></li>
-            <li><a href="#blog" className={css.list}>Blog</a></li>
+            <li><a href="#products" onClick={(e) => handleLinkClick(e, "products")} className={css.list}>Featured</a></li>
+            <li><a href="#about" onClick={(e) => handleLinkClick(e, "about")} className={css.list}>About Us</a></li>
+            <li><a href="#products" onClick={(e) => handleLinkClick(e, "products")} className={css.list}>Product</a></li>
+            <li><a href="#blog" onClick={(e) => handleLinkClick(e, "blog")} className={css.list}>Blog</a></li>
           </ul>
         </div>
       </div>

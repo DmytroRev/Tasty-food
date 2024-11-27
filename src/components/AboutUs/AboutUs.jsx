@@ -2,13 +2,13 @@ import css from "./AboutUs.module.css";
 
 const AboutUs = () => {
   return (
-    <div className={css.container}>
-      <div className={css.containerBlock}   id="about">
-        <p className={css.textInBlock} >about us</p>
+    <div className={css.container} id="about">
+      <div className={css.containerBlock}>
+        <p className={css.textInBlock}>about us</p>
       </div>
-      <img src="/girlWithVegetables.png" alt="girl" className={css.imgGirl} />
+      <img src="/girlWithVegetables.png" alt="girl" className={css.imgGirl}/>
       <div className={css.containerWithInfo}>
-        <h2 className={css.title}>We are healthy food organic</h2>
+        <h2 className={css.title} >We are healthy food organic</h2>
         <p className={css.paragraph}>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi aliquam
           in quasi. Lorem ipsum, dolor sit amet consectetur adipisicing elit.

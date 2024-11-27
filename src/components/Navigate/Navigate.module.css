@@ -1,12 +1,23 @@
 .container {
     display: flex;
     align-items: center;
-    padding: 30px 113px;
-justify-content: space-between;}
+    padding: 10px 113px;
+justify-content: space-between;
+border-bottom: 1px solid silver;
+margin-bottom: 30px;
+position: fixed;
+z-index: 9999999;
+top: 0;
+left: 0;
+width: 100%;
+background-color: white;
+}
 
 .img {
-    width: 217px;
-    height: 50px;
+    /* width: 217px;
+    height: 50px; */
+    width: 175px;
+    height: 35px;
 }
 
 .ContainerForListAndBtns{ 
@@ -52,8 +63,24 @@ justify-content: space-between;}
 }
 
 .btn {
+    position: relative;
     width: 40px;
     height: 40px;
     border: none;
     cursor: pointer;
 }
+
+.cartCount {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #76A713;
+    color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+  }

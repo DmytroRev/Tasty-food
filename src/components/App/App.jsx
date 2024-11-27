@@ -4,7 +4,7 @@ import Blog from "../BlogList/BlogList";
 import CountTotal from "../CountTotal/CountTotal";
 import Discount from "../Discount/Discount";
 import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
+// import Header from "../Header/Header";
 import ListRec from "../ListRec/ListRec";
 import Main from "../Main/Main";
 import Navigate from "../Navigate/Navigate";
@@ -16,7 +16,7 @@ import UnderMain from "../UnderMain/UnderMain";
 export default function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Navigate />
       <Main/>
       <UnderMain/>
