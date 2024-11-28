@@ -1,6 +1,13 @@
+import useScrollTo from "../hooks/useScrollTo";
 import css from "./Main.module.css";
 
 const Main = () => {
+  const scrollToElement = useScrollTo()
+  
+  const handleLinkClick = (e, targetId) => {
+    e.preventDefault()
+    scrollToElement(targetId)
+  }
   return (
     <div className={css.container}>
         <div>
@@ -8,7 +15,7 @@ const Main = () => {
         Tasty & <br /> Healthy <span className={css.textSpan}>Organic</span>
         <br /> Food Everyday
       </h1>
-      <button className={css.btn}><a href="#products" style={{textDecoration: 'none', color: '#FFFFFF'}}>Shop now</a></button>
+      <button className={css.btn}><a href="#products" onClick={(e) => handleLinkClick(e, "products")} style={{textDecoration: 'none', color: '#FFFFFF'}}>Shop now</a></button>
       </div>
       <div className={css.containerBlock}>
         <p className={css.textInBlock}>Orange Lemon</p>
