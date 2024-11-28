@@ -12,7 +12,8 @@ const Discount = () => {
           </span>
         </p>
         <div>
-          <button className={css.btn}>Buy now</button>
+          <a href="#products"><button className={css.btn}>Buy now</button></a>
+          
         </div>
       </div>
       <div className={css.figure}>

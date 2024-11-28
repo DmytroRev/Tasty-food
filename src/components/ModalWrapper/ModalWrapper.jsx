@@ -23,65 +23,31 @@ const customStyles = {
 
 Modal.setAppElement("#root");
 
-const ModalWrapper = ({ isOpen, onClose, product }) => {
+const ModalWrapper = ({ isOpen, onClose, children }) => {
   return (
-    <div>
-      <Modal
-        isOpen={isOpen}
-        onRequestClose={onClose}
-        style={customStyles}
-        shouldCloseOnOverlayClick={true}
-        shouldCloseOnEsc={true}
-      >
-        {product && (
-          <div className={css.container}>
-            <div>
-            <button onClick={onClose} className={css.btnClose}><IoCloseSharp />
-            </button>
-            </div>
-            <div className={css.img}>
-              <img src={product.image} alt={product.name} />
-            </div>
-            <div className={css.containerWithInfo}>
-              <h2 className={css.title}>{product.name}</h2>
-              <p className={css.category}>{product.category}</p>
-              <p className={css.price}>
-          {product.isDiscounted ? (
-            <>
-              <span className={css.oldPrice}>${product.price.toFixed(2)} <span style={{color: '#76A713', fontSize: 15}}>-</span></span>
-              <span className={css.price}> ${product.discountPrice.toFixed(2)}</span>
-            </>
-          ) : (
-            `$${product.price.toFixed(2)}`
-          )}
-        </p>
-              <p>{product.description}</p>
-              <div className={css.rating}>
-        <Rating style={{maxWidth: 100}}
-        value={product.rating}
-        readOnly/>
+    <Modal
+      isOpen={isOpen}
+      onRequestClose={onClose}
+      style={customStyles}
+      shouldCloseOnOverlayClick={true}
+      shouldCloseOnEsc={true}
+    >
+      <div className={css.container}>
+        <div>
+          <button onClick={onClose} className={css.btnClose}>
+            <IoCloseSharp />
+          </button>
         </div>
-            </div>
-          </div>
-        )}
-      </Modal>
-    </div>
+        {children}
+      </div>
+    </Modal>
   );
 };
 
 ModalWrapper.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   onClose: PropTypes.func.isRequired,
-  product: PropTypes.shape({
-    image: PropTypes.string,
-    name: PropTypes.string,
-    category: PropTypes.string,
-    price: PropTypes.number,
-    isDiscounted: PropTypes.bool,
-    discountPrice: PropTypes.number,
-    rating: PropTypes.number,
-    description: PropTypes.string,
-  }).isRequired,
+  children: PropTypes.node.isRequired,  // Принимает любой JSX
 };
 
 export default ModalWrapper;

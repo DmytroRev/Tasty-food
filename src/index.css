@@ -14,3 +14,7 @@ ul {
 body {
 background-color: #FFFFFF;
 }
+
+html {
+  scroll-behavior: smooth; /* Плавная прокрутка при переходе по якорным ссылкам */
+}
