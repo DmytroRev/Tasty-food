@@ -9,7 +9,7 @@ const Subscribe = () => {
   const handleSubs = () => {
     if (!email.trim()) {
       toast.error("Oops! It seems you haven't entered anything...", {
-        position: "top-center",
+        position: "center",
         autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -19,7 +19,7 @@ const Subscribe = () => {
       });
     } else {
       toast.success("You have successfully subscribed to our newsletter!", {
-        position: "top-center",
+        position: "center",
         autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -61,3 +61,5 @@ const Subscribe = () => {
 };
 
 export default Subscribe;
+
+

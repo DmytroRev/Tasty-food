@@ -18,30 +18,53 @@
   
   .item {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
   }
-
+  
   .img {
     width: 90px;
     height: 90px;
+    margin-right: 20px;
+    object-fit: cover;
   }
   
   .details {
-    display: flex;
-    /* flex-direction: column; */
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
   }
   
   .name {
+    justify-self: start;
     font-weight: bold;
-    margin-left: 10px;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .controlBtn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .quantity {
+    margin: 0 10px;
   }
   
   .price {
+    justify-self: end;
     color: black;
-    margin-left: 30px;
+    font-size: 18px;
   }
+  
 
   .oldPrice {
     text-decoration: line-through;
@@ -79,6 +102,11 @@
   .savingsAmount {
     color: gray;
   }
+
+  .containerForBtn {
+    display: flex;
+    justify-content: space-between;
+}
   
   .clearBtn {
     background-color: red;
@@ -86,6 +114,24 @@
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .clearBtn:hover {
+    background-color: #FF8533
+  }
+
+  .buyBtn {
+    background-color: #76A713;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .buyBtn:hover {
+    background-color: #94C531;
   }
   
   .empty {

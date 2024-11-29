@@ -29,7 +29,7 @@ export default function App() {
       <Subscribe/>
       <Footer />
       <ScrollToTopButton/>
-      <Toaster/>
+      <Toaster position="center"/>
     </>
   );
 }
