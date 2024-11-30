@@ -4,13 +4,9 @@ import css from "./BacketBuyInfo.module.css";
 import { addItem, clearCart, removeItem } from "../../redux/basket/cartSlice";
 import { useRef, useState } from "react";
 import OrderForm from "../OrderForm/OrderForm";
-import CardInputForm from "../CardInputForm/CardInputForm";
-import { Elements } from "@stripe/react-stripe-js";
-import { loadStripe } from "@stripe/stripe-js";
 
-const stripePromise = loadStripe(
-  "pk_test_51QQrkwFWCca8G3bWSzDpD4pvsM2Fi0FtZzZxKRz6eGiroAgj1xy8wY00HQqf5P7axqEhdZsbn08WLKKSKhOJfvPi00a8HVjcFB"
-);
+
+
 
 const BacketBuyInfo = ({ isOpen, onClose }) => {
   const dispatch = useDispatch();
@@ -121,9 +117,8 @@ const BacketBuyInfo = ({ isOpen, onClose }) => {
         ) : (
           <p className={css.empty}>Cart is empty</p>
         )}
-        <Elements stripe={stripePromise}>
-          <CardInputForm />
-        </Elements>
+
+
       </div>
     </ModalWrapper>
   );
