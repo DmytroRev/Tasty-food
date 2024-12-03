@@ -57,7 +57,7 @@ const handleModalClose = () => setIsModalOpen(false);
           <Rating style={{ maxWidth: 80 }} value={product.rating} readOnly />
         </div>
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <AddToCartButton product={product} /> {/* Заменяем кнопку на новую с анимацией */}
+          <AddToCartButton product={product} />
         </div>
       </div>
       {isModalOpen && (

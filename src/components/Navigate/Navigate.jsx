@@ -3,9 +3,15 @@ import css from "./Navigate.module.css";
 import { CiShoppingCart } from "react-icons/ci";
 import { useSelector } from "react-redux";
 import useScrollTo from "../hooks/useScrollTo";
+import BacketBuyInfo from "../BacketBuyInfo/BacketBuyInfo";
+import { useState } from "react";
 
-const Navigate = () => {
+const Navigate = ({ product }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const scrollToElement = useScrollTo()
+
+  const handleModalOpen = () => setIsModalOpen(true);
+  const handleModalClose = () => setIsModalOpen(false);
   
   const handleLinkClick = (e, targetId) => {
     e.preventDefault()
@@ -29,12 +35,18 @@ const Navigate = () => {
       <button className={css.btn}>
         <FiSearch style={{width: 20, height:20}}/>
       </button>
-      <button className={css.btn}>
+      <button className={css.btn}  onClick={handleModalOpen}>
         <CiShoppingCart  style={{width: 20, height:20}}/>
         <span className={css.cartCount}>{totalItems}</span>
       </button>
     </div>
     </div>
+    {isModalOpen && (
+        <BacketBuyInfo
+          isOpen={isModalOpen}
+          onClose={handleModalClose}
+        />
+      )}
     </div>
   );
 };
